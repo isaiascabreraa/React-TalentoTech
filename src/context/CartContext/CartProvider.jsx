@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { CardContext } from "./CardContext"
+import { CartContext } from "./CartContext"
 
 export const CartProvider = ({children}) => {
 
@@ -33,8 +33,8 @@ export const CartProvider = ({children}) => {
     const values = { cart: cart, addItem: addItem, clearCart: clearCart, getTotalItems: getTotalItems}
 
     return( 
-        <CardContext.Provider value={{values}} >
+        <CartContext.Provider value={{values}} >
             {children}
-        </CardContext.Provider>
+        </CartContext.Provider>
     )
 }

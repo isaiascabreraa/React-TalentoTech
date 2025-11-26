@@ -21,10 +21,10 @@ export const ItemListContainer = () => {
             console.log(err)
         });
 
-    }, [products])
+    }, [])
 
     return(
-        <section>
+        <section className='item-container'>
             <ItemList list={products}/>
         </section>
     )

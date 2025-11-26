@@ -1,14 +1,18 @@
 
-export const ItemList = ({list}) => {
+import { Link } from 'react-router-dom'
+import { Item } from '../Item/Item'
+
+export const ItemList = ({ list }) => {
     
     return(
         <>
-            {list.lenght ? 
+            {list.length > 0 ? 
                 list.map((prod) => {
-                    <Link key={prod.id} to={`/detail/${prod.id}`}>
-                        <Item {...prod}/>
-                    </Link>
-                }) 
+                    return (<Link key={prod.id} to={`/detail/${prod.id}`}>
+                                <Item {...prod}/>
+                            </Link>)
+                    }
+                )
             : <p>No hay productos disponibles</p>}
         </>
     )

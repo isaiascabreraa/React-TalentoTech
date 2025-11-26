@@ -1,19 +1,20 @@
-import {Link} from 'react-router-dom'
-import { useCartContext } from '../../context/CartContext/useCardContext'
+import { Link } from 'react-router-dom'
+import { useCartContext } from '../../context/CartContext/useCartContext'
 
 export const Nav = () => {
 
-    const { getTotalItems } = useCartContext();
+    const { values } = useCartContext();
+    const total = values.getTotalItems();
     
     return(
-        <nav>
+        <nav className='navbar'>
             <ul>
                 <li>
                     <Link to={'/'}>Home</Link>
                 </li>
                 <li>
                     <Link to={'/'}>Carrito</Link>
-                    {getTotalItems() > 0 && (<span className=''>{getTotalItems()}</span>)}
+                    {total > 0 && (<span className=''>{total}</span>)}
                 </li>
             </ul>
         </nav>

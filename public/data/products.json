@@ -1,0 +1,22 @@
+[
+  { "name": "Bloodborne",               "price": 19.99, "description": "Descripción del juego.", "imageUrl": "/images/Bloodborne.jpg" },
+  { "name": "Control Ultimate Edition", "price": 29.99, "description": "Descripción del juego.", "imageUrl": "/images/Control_ultimate_edition.jpg" },
+  { "name": "Dave the Diver",           "price": 14.99, "description": "Descripción del juego.", "imageUrl": "/images/Dave_the_diver.jpg" },
+  { "name": "Dead Cells",               "price": 9.99,  "description": "Descripción del juego.", "imageUrl": "/images/dead_Cells.jpg" },
+  { "name": "Devil May Cry 5",          "price": 24.99, "description": "Descripción del juego.", "imageUrl": "/images/Devil_may_cry_5.jpg" },
+  { "name": "Doom Eternal",             "price": 19.99, "description": "Descripción del juego.", "imageUrl": "/images/Doom_Eternal.jpg" },
+  { "name": "God of War",               "price": 34.99, "description": "Descripción del juego.", "imageUrl": "/images/God_of_War.jpg" },
+  { "name": "God of War Ragnarok",      "price": 39.99, "description": "Descripción del juego.", "imageUrl": "/images/God_of_War_ragnarok.jpg" },
+  { "name": "Hade",                     "price": 17.99, "description": "Descripción del juego.", "imageUrl": "/images/Hades.jpg" },
+  { "name": "Hollow Knight",            "price": 12.99, "description": "Descripción del juego.", "imageUrl": "/images/Hollow_Knight.jpg" },
+  { "name": "It Takes Two",             "price": 24.99, "description": "Descripción del juego.", "imageUrl": "/images/It_Takes_Two.jpg" },
+  { "name": "Little Nightmares",        "price": 14.99, "description": "Descripción del juego.", "imageUrl": "/images/Little_nightmares.jpg" },
+  { "name": "Little Nightmares 2",      "price": 16.99, "description": "Descripción del juego.", "imageUrl": "/images/Little_nightmares_2.jpg" },
+  { "name": "Neon White",               "price": 19.99, "description": "Descripción del juego.", "imageUrl": "/images/Neon_white.jpg" },
+  { "name": "Outer Wilds",              "price": 22.99, "description": "Descripción del juego.", "imageUrl": "/images/Outer_Wilds.jpg" },
+  { "name": "Outlast II",               "price": 14.99, "description": "Descripción del juego.", "imageUrl": "/images/Outlast_II.jpg" },
+  { "name": "Red Dead Redemption II",   "price": 34.99, "description": "Descripción del juego.", "imageUrl": "/images/Red_dead_redemption_2.jpg" },
+  { "name": "Resident Evil VII",        "price": 18.99, "description": "Descripción del juego.", "imageUrl": "/images/Resident_evil_VII.jpg" },
+  { "name": "Sea of Stars",             "price": 9.99,  "description": "Descripción del juego.", "imageUrl": "/images/sea_of_Stars.jpg" },
+  { "name": "The Witcher 3",            "price": 29.99, "description": "Descripción del juego.", "imageUrl": "/images/The_witcher_3.jpg" }
+]
