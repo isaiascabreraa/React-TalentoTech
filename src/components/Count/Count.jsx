@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const Count = (buttonText, onConfirm) => {
+export const Count = ({ btnText, onConfirm }) => {
     const [count, setCount] = useState(0);
 
     const increase = () => {
@@ -18,14 +18,14 @@ export const Count = (buttonText, onConfirm) => {
     }
 
     return(
-        <div className="display: flex flex-direction:column">
+        <div style={{ display: "flex", flexDirection: "column" }}>
             <div>
                  <button onClick={decrease} disabled={count === 0}>-</button>
-                <span>{count}</span>
+                    <span>{count}</span>
                 <button onClick={increase}>+</button>
             </div>
             
-            <button onClick={confirm} disabled={count === 0}>{buttonText}</button>
+            <button onClick={confirm} disabled={count === 0}>{btnText}</button>
         </div>
     )
 }
