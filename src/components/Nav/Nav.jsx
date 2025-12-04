@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Category from "../Category/Category";
 import { useCartContext } from '../../context/CartContext/useCartContext'
 
 export const Nav = () => {
@@ -11,6 +12,9 @@ export const Nav = () => {
             <ul>
                 <li>
                     <Link to={'/'}>Home</Link>
+                </li>
+                <li>
+                    <Category />
                 </li>
                 <li>
                     <Link to={'/carrito'}>Carrito</Link>

@@ -1,9 +1,12 @@
 
 import {useState, useEffect} from 'react'
 import { ItemList } from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom';
 
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([])
+
+    const { category } = useParams();
 
     useEffect( () => {
 
@@ -15,13 +18,21 @@ export const ItemListContainer = () => {
             return res.json();
         })
         .then((data) => {
-            setProducts(data)
+            if(category) {
+                const filteredProducts = data.filter(prod => 
+                    prod.category.toLowerCase().includes(category.toLowerCase().trim())
+                );
+                setProducts(filteredProducts);
+            } else {
+                setProducts(data);
+            }
+
         })
         .catch((err) => {
             console.log(err)
         });
 
-    }, [])
+    }, [category])
 
     return(
         <section className='item-container'>
