@@ -7,6 +7,7 @@ import { ProductFormContainer } from '../components/adminComponents/ProductFormC
 import { MainLayout } from '../layout/MainLayout'
 import { AdminLayout } from '../layout/AdminLayout'
 import { Login } from '../components/Login/Login'
+import { RutaProtegida } from '../components/RutaProtegida/RutaProtegida'
 
 export default function PageRoutes() {
 
