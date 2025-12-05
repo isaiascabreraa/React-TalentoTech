@@ -22,8 +22,11 @@ export default function PageRoutes() {
 
             <Route path='/admin' element={<AdminLayout />}>
                 <Route index element={<Login />}></Route>
-                <Route path='alta-productos' element={<ProductFormContainer/>}></Route>'
-
+                <Route path='alta-productos' element={
+                        <RutaProtegida>
+                            <ProductFormContainer/>
+                        </RutaProtegida>}>
+                </Route>
             </Route>
 
         </Routes>
