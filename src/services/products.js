@@ -1,8 +1,16 @@
 
 const BASE_URL = "https://6930bcb5778bbf9e0072580f.mockapi.io";
 
-export const getProducts = async () => {
-    const response = await fetch(`${BASE_URL}/products`);
+export const getProducts = async (category) => {
+
+    let url = BASE_URL;
+    if(category) {
+        url += `/products?category=${category}`;
+    } else {
+        url += `/products`;
+    }
+
+    const response = await fetch(url);
     if(!response.ok) {
         throw new Error("Error al crear el producto");
     }
