@@ -9,7 +9,9 @@ function App() {
   return (
     <BrowserRouter>
       <CartProvider>
-        <PageRoutes />
+        <div className='main'>
+          <PageRoutes />
+        </div>
       </CartProvider> 
     </BrowserRouter>
   )

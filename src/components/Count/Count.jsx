@@ -1,3 +1,5 @@
+
+import './Count.css'
 import { useState } from "react"
 
 export const Count = ({ btnText, onConfirm }) => {
@@ -18,14 +20,14 @@ export const Count = ({ btnText, onConfirm }) => {
     }
 
     return(
-        <div style={{ display: "flex", flexDirection: "column" }}>
-            <div>
-                 <button onClick={decrease} disabled={count === 0}>-</button>
+        <div className="count-container">
+            <div className="quantity-cart">
+                <button onClick={decrease} disabled={count === 0}>-</button>
                     <span>{count}</span>
                 <button onClick={increase}>+</button>
             </div>
             
-            <button onClick={confirm} disabled={count === 0}>{btnText}</button>
+            <button className="add-cart" onClick={confirm} disabled={count === 0}>{btnText}</button>
         </div>
     )
 }

@@ -1,8 +1,10 @@
 
+import './Footer.css'
+
 export const Footer = () => {
     return(
-        <div>
-            <p>Soy un Footer</p>
+        <div className="footer">
+            <span> © 2024 React Talento Tech - Todos los derechos reservados </span>
         </div>
     )
 }

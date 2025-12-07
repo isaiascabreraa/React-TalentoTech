@@ -1,0 +1,33 @@
+
+
+/* Contenedor de boton categorias. Hace que cuando coloques el mouse se despliegue */
+.category-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0px;
+    top: 100%;
+    left: 0;
+    align-items: center;
+    background-color: rgb(43, 44, 44);
+}
+
+
+.dropdown-list {
+    display: flex;
+    flex-direction: column;
+   
+    padding: 5px;
+    
+    align-items: center;
+
+    background-color: rgb(43, 44, 44);
+}
+
+

@@ -1,3 +1,5 @@
+
+import './ItemDetailContainer.css'
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
@@ -20,7 +22,7 @@ export const ItemDetailContainer = () => {
     }, [id])
 
     return(
-        <div>
+        <div className="detail-container">
             {detail && Object.keys(detail).length ? (
                 <ItemDetail detail={detail}/>
             ) : (

@@ -1,3 +1,5 @@
+
+import './Nav.css'
 import { Link } from 'react-router-dom'
 import Category from "../Category/Category";
 import { useCartContext } from '../../context/CartContext/useCartContext'

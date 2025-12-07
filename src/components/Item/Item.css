@@ -1,0 +1,24 @@
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+  max-width: 250px;
+  max-height: 500px;
+  gap: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.item-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.item-title, .item-price {
+  margin: 0;
+  color: black;
+}

@@ -12,8 +12,6 @@ export const CartProvider = ({children}) => {
 
     const addItem = (item) => {
 
-        //console.log("Adding item to cart:", item);
-        //console.log("Item quatity:", item.quantity);
         if(exists(item.id)) {
             const updatedCart = cart.map(p => {
                 if(p.id === item.id){
