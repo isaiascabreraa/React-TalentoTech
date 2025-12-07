@@ -9,7 +9,6 @@ export const Cart = () => {
     const { values } = useCartContext();
     const { cart, deleteItem, clearCart, getTotalPrice, checkout } = values;
 
-
     return(
         <section>
             <h2>Carrito de compras</h2>

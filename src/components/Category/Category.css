@@ -22,12 +22,12 @@
 .dropdown-list {
     display: flex;
     flex-direction: column;
-   
     padding: 5px;
-    
     align-items: center;
-
     background-color: rgb(43, 44, 44);
 }
 
 
+.dropdown-list li:hover {
+  background-color: rgb(82, 82, 82);
+}

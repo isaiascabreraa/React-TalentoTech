@@ -20,7 +20,7 @@ export const Nav = () => {
                 </li>
                 <li>
                     <Link to={'/carrito'}>Carrito</Link>
-                    {total > 0 && (<span className=''>{total}</span>)}
+                    {total > 0 && (<span className='quantity-products'>{total}</span>)}
                 </li>
             </ul>
         </nav>
