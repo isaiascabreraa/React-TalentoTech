@@ -24,7 +24,7 @@ export const ProductFormUI = ({ product, errors, loading, onChange, onFileChange
 
                 <div>
                     <label htmlFor="description">Descripción:</label>
-                    <input type="text" id="description" name="description" value={product.category} onChange={onChange} required/>
+                    <input type="text" id="description" name="description" value={product.description} onChange={onChange} required/>
                     {errors.description && <span className="error">{errors.description}</span>}
                 </div>
 
@@ -34,7 +34,7 @@ export const ProductFormUI = ({ product, errors, loading, onChange, onFileChange
                     {errors.imageFile && <span className="error">{errors.imageFile}</span>}
                 </div>
 
-                <button type="submit" onClick={onSubmit} disabled={loading}>
+                <button type="submit" disabled={loading}>
                     {loading ? 'Guardando...' : 'Guardar Producto'}
                 </button>
 
